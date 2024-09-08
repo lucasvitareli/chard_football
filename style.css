@@ -1,0 +1,257 @@
+/* GLOBAL */
+
+* {
+    font-family: 'roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #033860;
+    height: auto;
+
+    & img {
+        height: auto;
+        max-height: 180px;
+        width: auto;
+    }
+
+    & .nav .nav-link {
+        color: #fff;
+    }
+
+    & .nav-link:hover {
+        color: #ffc33d;
+    }
+
+    & .nav .nav-link.active {
+        background-color: #eeee;
+        color: black;
+    }
+
+    & .nav .nav-link.active:hover {
+        background-color: #e2dfdfee;
+    }
+
+    & .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+}
+
+/* HOME (CAROUSEL) */
+
+#home {
+    & .carousel-box {
+
+        
+        background-color: #033860;
+        border-radius: 15px;
+    }
+
+    .carousel-item img {
+        height: 500px;
+        padding: 8px;
+        border-radius: 15px;
+
+    }
+
+}
+
+/* NEWS */
+
+#news {
+    & article {
+        background-color: #fff;
+    }
+
+    & h1 {
+        font-family: "Raleway", sans-serif;
+        font-size: 60px;
+    }
+
+    & .btn {
+        background-color: #fff;
+        border: solid 1px;
+    }
+
+    & .btn:hover {
+        border: solid 2px black;
+    }
+}
+
+/* FIXTURES */
+
+#fixtures {
+    & h1 {
+        font-family: "Raleway", sans-serif;
+        font-size: 60px;
+    }
+
+    & .accordion {
+        & .accordion-button {
+            background-color: #033860;
+            color: #fff;
+
+            & h2 {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .accordion-body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            width: 100%;
+            
+            & h5 {
+                flex: 1;
+                align-items: center;
+            }
+        
+        }
+        
+    }
+
+
+    & span {
+        color: #ffc33d;
+        font-weight: bold;
+        font-style: italic;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* TEAM */
+
+#team {
+    & h1 {
+        font-family: "Raleway", sans-serif;
+        font-size: 60px;
+    }
+    & aside {
+        & .nav-link {
+            background-color: #ffc33d;
+            margin-bottom: 8px;
+            color: black;
+            font-size: 20px;
+        }
+        & .active {
+            background-color: #033860;
+            border: solid;
+            color: #fff;
+        }
+        & .nav-link:hover {
+            background-color: #033860;
+            color: #fff;
+        }
+
+    }
+}
+
+/* CLUB */
+
+#club {
+    & h1 {
+        font-family: "Raleway", sans-serif;
+        font-size: 60px;
+    }
+
+    & article {
+        & img {
+            max-height: 232px;
+        }
+
+        & .card-body {
+            height: 87px;
+        }
+    }
+}
+
+/* CONTACT */
+
+#contact {
+    font-family: "Raleway", sans-serif;
+
+    & h1 {
+        font-size: 60px;
+    }
+
+    & .social-links {
+        display: flex;
+        justify-content: center;
+        background-color: #033860;
+
+        & li {
+            list-style: none;
+            display: inline;
+        }
+
+        & a {
+            text-decoration: none;
+        }
+
+        & i {
+            margin-right: 20px;
+            color: #ffc33d;
+        }
+    }
+
+    & form {
+        font-weight: bold;
+
+        & textarea {
+            height: 200px;
+            resize: none;
+            border: 1px solid;
+        }
+
+        & button {
+            background-color: #ffc33d;
+            border: solid 1px;
+        }
+    }
+}
+
+/* Responsividade celulares */
+
+@media (max-width: 767px) {
+    #home .carousel-box {
+        height: auto; 
+        background-color: #fff;
+    }
+
+    .carousel-item img {
+        width: 100%;  
+        height: auto; 
+        padding: 5px;  
+        object-fit: contain; 
+    }
+
+    & .nav-link {
+        margin-right: 10px;
+    }
+
+    form {
+        margin-top: 20px;
+        text-align: center;
+}
+
+}
+
+@media (min-width: 768px), (max-width: 1023px) {
+    #team .col-md-2 {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+    #team .col-md-10 {
+        width: 100%; /* Faz com que o conteúdo ocupe a largura total da tela */
+    }
+
+    .nav-link {
+        margin-right: 10px;
+    }
+
+}
+
+
